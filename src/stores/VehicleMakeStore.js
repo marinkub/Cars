@@ -3,7 +3,6 @@ import VehicleMakeService from "../services/VehicleMakeService";
 
 class VehicleMakeStore {
     data = []
-    search = ''
     cursor = null
     fistVisible = null
     order = 'asc'
@@ -16,7 +15,6 @@ class VehicleMakeStore {
             cursor: observable,
             fistVisible: observable,
             order: observable,
-            search: observable,
             handleSort: action,
             filtered: action,
             nextPage: action,
